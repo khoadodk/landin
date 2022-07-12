@@ -87,6 +87,10 @@ section {
     font-size: 20px;
 }
 
+.stars {
+    color: var(--primary-color)
+}
+
 /* Nav */
 .navbar {
     background-color: var(--bg-color);
@@ -163,8 +167,78 @@ section {
     margin: 100px 0;
 }
 
+#pricing .price-order-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* TEAM */
+.team-member {
+    position: relative;
+    height: 350px;
+    margin-top: 50px;
+}
+
+.team-member::before {
+    content: "";
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: var(--dark-grey);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+/* REVIEWS */
+#reviews {
+    min-height: 450px;
+    background-image: url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.review-carousel {
+    width: 60%;
+    background-color: var(--bg-color);
+    margin: auto;
+}
+
+#reviews img {
+    max-width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+    padding: 50px 0;
+}
+
+footer .footer__logo {
+    height: 50px;
+    width: 150px;
+}
+
+footer .social-icons {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 992px) {
     #pricing .price-order-1 {
         order: 2 !important
+    }
+
+    footer {
+        text-align: center;
     }
 }
