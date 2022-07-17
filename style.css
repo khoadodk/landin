@@ -12,6 +12,9 @@
     --light-grey: #D9D9D9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Inter", sans-serif;
